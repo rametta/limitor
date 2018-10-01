@@ -1,7 +1,7 @@
-// TODO: Reference the correct Fluture types
+/// <reference types="fluture" />
 
 declare module 'limitor' {
-  type Limitor = (flutures: any[]) => (limit: number) => void
+  type Limitor = (futures: FutureInstance[]) => (limit: number) => FutureInstance[]
 
   const limitor: Limitor
 
